@@ -1,0 +1,177 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-size: 15px;
+    margin: 5px;
+    padding: 0;
+    text-align: center;
+
+}
+
+h1{
+    font-size: 55px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+nav ul{
+    list-style-type: none;
+  }
+
+nav li{
+    display:inline;
+    padding-right: 20px;
+    /* fix the width */
+}
+
+nav{
+    padding: 25px 0;    
+    text-align: left;  
+    width: max-content; 
+  }
+  
+footer{
+    background-color: #fff48f;
+    color: black;
+    padding: 10px;
+    position: fixed;
+    text-align: center;   
+}
+
+.socials img{
+    width: 39px; 
+    height: 39px; 
+    object-fit: cover;
+}
+
+nav a{
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav a:hover{ 
+    text-decoration: underline; 
+    background-color: #fff48f;
+} 
+
+
+*:focus{
+    border: 2px solid black;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    
+    /* grid-template-rows: auto auto auto auto; */
+    /* grid-row-gap: 20px; */
+}   
+
+/* ALL IMAGE STYLING HERE */
+img{
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+#bighouse{
+    grid-column: 1/span 3;
+    grid-row: 1/2;
+}
+#about_me{
+    grid-column: 2/3;
+    grid-row:2/3;
+}
+#headshot{
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+#description{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+#monty{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+#manor{
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+#family{
+    grid-column: 1/2;
+    grid-row: 4/5;
+}
+#wilmas{
+    grid-column: 1/2;
+    grid-row: 5/-1;
+}
+#arb{
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+#jacket{
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+#rainbow{
+    grid-column: 3/4;
+    grid-row: 4/5;
+}
+#sunset{
+    grid-column: 3/4;
+    grid-row: 5/-1;
+}
+
+/* IMAGES FROM EXPERIENCE PAGE HERE */
+
+#GM{
+    width: 20%;
+}
+
+#morningbrew{
+    width: 20%;
+}
+
+#tennis{
+    width: 15%;
+}
+#leanin{
+    width: 10%;
+}
+
+#ACS{
+    width: 10%;
+}
+
+#chio{
+    width: 10%;
+}
+
+/* IMAGES FROM SKILLS PAGE HERE */
+
+#microsoftlogo{
+    /* display:block; */
+    width: 10%;
+    grid-column:1/2;
+    grid-row: 2/3;
+}
+
+/* not working */
+#adobe_text{
+    display: grid;
+    width: 10%;
+}
+
+#adobelogo{
+    /* display:block; */
+    display: grid;
+    width: 10%;
+}
+
