@@ -12,6 +12,7 @@ body{
 
 h1{
     font-size: 55px;
+    background-color: #fff48f;
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
 }
@@ -36,7 +37,6 @@ footer{
     background-color: #fff48f;
     color: black;
     padding: 10px;
-    position: fixed;
     text-align: center;   
 }
 
@@ -64,8 +64,8 @@ nav a:hover{
 
 .container{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     
     /* grid-template-rows: auto auto auto auto; */
     /* grid-row-gap: 20px; */
@@ -80,53 +80,53 @@ img{
 }
 
 #bighouse{
-    grid-column: 1/span 3;
+    grid-column: 1/-1;
     grid-row: 1/2;
 }
 #about_me{
-    grid-column: 2/3;
+    grid-column: 1/-1;
     grid-row:2/3;
 }
 #headshot{
-    grid-column: 2/3;
+    grid-column: 1/-1;
     grid-row: 3/4;
 }
 #description{
-    grid-column: 2/3;
-    grid-row: 2/3;
+    grid-column: 1/-1;
+    grid-row: 4/5;
 }
 
 #monty{
-    grid-column: 1/2;
-    grid-row: 2/3;
+    grid-column: 1/-1;
+    grid-row: 5/6;
 }
 #manor{
-    grid-column: 1/2;
-    grid-row: 3/4;
+    grid-column: 1/-1;
+    grid-row: 6/7;
 }
 #family{
-    grid-column: 1/2;
-    grid-row: 4/5;
+    grid-column: 1/-1;
+    grid-row: 8/9;
 }
 #wilmas{
-    grid-column: 1/2;
-    grid-row: 5/-1;
+    grid-column: 1/-1;
+    grid-row: 9/10;
 }
 #arb{
-    grid-column: 3/4;
-    grid-row: 2/3;
+    grid-column: 1/-1;
+    grid-row: 10/11;
 }
 #jacket{
-    grid-column: 3/4;
-    grid-row: 3/4;
+    grid-column: 1/-1;
+    grid-row: 11/12;
 }
 #rainbow{
-    grid-column: 3/4;
-    grid-row: 4/5;
+    grid-column: 1/-1;
+    grid-row: 12/13;
 }
 #sunset{
-    grid-column: 3/4;
-    grid-row: 5/-1;
+    grid-column: 1/-1;
+    grid-row: 13/-1;
 }
 
 /* IMAGES FROM EXPERIENCE PAGE HERE */
@@ -154,24 +154,108 @@ img{
     width: 10%;
 }
 
-/* IMAGES FROM SKILLS PAGE HERE */
+/* SKILLS PAGE HERE */
+.container_skills{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-row-gap: 20px;
+}
 
 #microsoftlogo{
     /* display:block; */
     width: 10%;
     grid-column:1/2;
-    grid-row: 2/3;
+    grid-row: 1/2;
+}
+
+#microsoft_text{
+    grid-column: 2/-1;
+    grid-row: 1/2;
 }
 
 /* not working */
 #adobe_text{
-    display: grid;
-    width: 10%;
+    grid-column: 2/-1;
+    grid-row: 2/3;
 }
 
 #adobelogo{
-    /* display:block; */
-    display: grid;
     width: 10%;
+    grid-column: 1/2;
+    grid-row: 2/3;
 }
 
+#coding{
+    grid-column: 2/-1;
+    grid-row: 3/4;
+}
+
+#pythonlogo{
+    width: 10%;
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+
+#class{
+    grid-column: 1/-1;
+    grid-row: 4/-1;
+
+}
+@media screen and (min-width: 750px) and (max-width: 1025px) {
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+    #bighouse{
+        grid-column: 1/span 3;
+        grid-row: 1/2;
+    }
+    #about_me{
+        grid-column: 2/3;
+        grid-row:2/3;
+    }
+    #headshot{
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+    #description{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    
+    #monty{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    #manor{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    #family{
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+    #wilmas{
+        grid-column: 1/2;
+        grid-row: 5/-1;
+    }
+    #arb{
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+    #jacket{
+        grid-column: 3/4;
+        grid-row: 3/4;
+    }
+    #rainbow{
+        grid-column: 3/4;
+        grid-row: 4/5;
+    }
+    #sunset{
+        grid-column: 3/4;
+        grid-row: 5/-1;
+    }
+}
