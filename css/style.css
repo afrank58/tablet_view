@@ -3,7 +3,7 @@ html{
 }
 
 body{
-    font-size: 15px;
+    font-size: 18px;
     margin: 5px;
     padding: 0;
     text-align: center;
@@ -31,7 +31,7 @@ h3{
 }
 
 h4{
-    font-size: 14px;
+    font-size: 15px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
     padding: 5px;
@@ -46,6 +46,7 @@ nav ul{
 nav li{
     display:inline;
     padding-right: 20px;
+    padding-top: 10px;
     /* fix the width */
 }
 
@@ -159,6 +160,7 @@ img{
 #wilmas{
     grid-column: 1/-1;
     grid-row: 9/10;
+    padding-bottom: 30px;
 }
 #arb{
     grid-column: 1/-1;
@@ -234,7 +236,7 @@ img{
 .container_skills{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     grid-row-gap: 20px;
 }
 
@@ -284,7 +286,7 @@ img{
     padding-left: 10px;
     padding-right: 10px;
     grid-column: 1/-1;
-    grid-row: 4/-1;
+    grid-row: 5/-1;
 
 }
 
@@ -296,7 +298,13 @@ form{
 }
 
 @media screen and (min-width: 750px) {
-
+    body{
+        font-size: 18px;
+        margin: 5px;
+        padding: 0;
+        text-align: center;
+    }
+    
     .container{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
