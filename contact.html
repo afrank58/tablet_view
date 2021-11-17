@@ -25,30 +25,34 @@
       </nav>
 
   </body>
-  <main>
+  <main id='main'>
   <h1>Contact Me</h1>
 
  <form action='https://formspree.io/f/xpzkggno' method='POST'>
   <fieldset>
+    
     <legend>Contact Me</legend>
+  
     <label for='name'> Your Name</label>
-    <input type="text" id='name' name="First and Last" placeholder="Enter Your Name">
+    <input type="text" id='name' name="First and Last" placeholder="Enter Your Name" required> 
+ 
+
 
     <label for='email'>Your Email</label>
-    <input type="email" id='email' name='Emails'>
+    <input type="email" id='email' name='Emails' placeholder="domain123@gmail.com" required>
 
 
-    <label for='phone'>Your Phone Number</label>
-    <input type="tel" id='phone' name="Cell Number">
-    <div><span>Format: 123-456-7890</span></div>
-
-
+   
+      <label for="phone">Phone</label>
+      <input type="text" data-format="+1 (ddd) ddd-dddd" id="phone" placeholder="(123) 456-7890">
     
+
+
+  
     <label for='text'>Leave A Message</label>
     
-    <textarea id='text'></textarea>
-    
-
+    <textarea id='text' required></textarea>
+   
     <!-- <label for='submission'></label> -->
     <input type="submit" value='SUBMIT'>
   </fieldset>

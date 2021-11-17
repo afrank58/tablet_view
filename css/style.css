@@ -38,6 +38,8 @@ h4{
 }
 
 nav ul{
+    display: flex;
+    flex-direction: column;
     list-style-type: none;
   }
 
@@ -57,11 +59,13 @@ nav{
 footer{
     background-color: #fff48f;
     color: black;
-    padding: 10px;
+    /* padding-top: 10px; */
     text-align: center;  
     /* WHY WON'T STAY ON BOTTOM */
-    position: sticky;
-    /* position: fixed;  */
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
 }
 
 .socials img{
@@ -223,7 +227,7 @@ img{
 
 #chio_text{
     margin: 0px 30px 0px 30px;
-    padding-bottom: 5px;
+    padding-bottom: 60px;
 }
 
 /* SKILLS PAGE HERE */
@@ -236,34 +240,40 @@ img{
 
 #microsoftlogo{
     /* display:block; */
+    padding-left: 10px;
     width: 10%;
     grid-column:1/2;
     grid-row: 1/2;
 }
 
 #microsoft_text{
+    padding-right: 10px;
     grid-column: 2/-1;
     grid-row: 1/2;
 }
 
 /* not working */
 #adobe_text{
+    padding-right: 10px;
     grid-column: 2/-1;
     grid-row: 2/3;
 }
 
 #adobelogo{
+    padding-left: 10px;
     width: 10%;
     grid-column: 1/2;
     grid-row: 2/3;
 }
 
 #coding{
+    padding-right: 10px;
     grid-column: 2/-1;
     grid-row: 3/4;
 }
 
 #pythonlogo{
+    padding-left: 10px;
     width: 10%;
     grid-column: 1/2;
     grid-row: 3/4;
@@ -271,10 +281,20 @@ img{
 
 
 #class{
+    padding-left: 10px;
+    padding-right: 10px;
     grid-column: 1/-1;
     grid-row: 4/-1;
 
 }
+
+form{
+	background: #eaebe9;
+	padding-left: 30px 20px 30px 20px;
+	width: 100%;
+    text-align: center;
+}
+
 @media screen and (min-width: 750px) {
 
     .container{
@@ -348,10 +368,14 @@ img{
     }
 
     /* WHY IS THIS NOT CHANGING ANYTHING */
-    nav ul{
+    nav ul {
         display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
+        flex-direction: row;
+        
+        /* why will nothing in flex row work */
+
+        /* flex-direction: row;
+        justify-content: flex-end; */
       }
 
     
