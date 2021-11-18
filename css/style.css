@@ -53,7 +53,7 @@ nav li{
 nav{
     padding: 25px 0;    
     text-align: left;  
-    width: max-content; 
+    width: 100%; 
     
   }
   
@@ -114,7 +114,8 @@ nav #current{
 .container{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+    grid-row-gap: 15px;
+    /* grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ; */
     
     /* grid-template-rows: auto auto auto auto; */
     /* grid-row-gap: 20px; */
@@ -130,53 +131,54 @@ img{
 
 #bighouse{
     grid-column: 1/-1;
-    grid-row: 1/2;
+    /* grid-row: 1/2; */
 }
 #about_me{
     grid-column: 1/-1;
-    grid-row:2/3;
+    /* grid-row:2/3; */
 }
 #headshot{
     grid-column: 1/-1;
-    grid-row: 3/4;
+    /* grid-row: 3/4; */
 }
 #description{
     grid-column: 1/-1;
-    grid-row: 4/5;
+    /* grid-row: 4/5; */
 }
 
 #monty{
     grid-column: 1/-1;
-    grid-row: 5/6;
+    /* grid-row: 5/6; */
 }
 #manor{
     grid-column: 1/-1;
-    grid-row: 6/7;
+    /* grid-row: 6/7; */
 }
 #family{
     grid-column: 1/-1;
-    grid-row: 7/8;
+    /* grid-row: 7/8; */
 }
 #wilmas{
     grid-column: 1/-1;
-    grid-row: 9/10;
+    /* grid-row: 9/10; */
     padding-bottom: 30px;
 }
 #arb{
     grid-column: 1/-1;
-    grid-row: 10/11;
+    /* grid-row: 10/11; */
 }
 #jacket{
     grid-column: 1/-1;
-    grid-row: 11/12;
+    /* grid-row: 11/12; */
 }
 #rainbow{
     grid-column: 1/-1;
-    grid-row: 12/13;
+    /* grid-row: 12/13; */
 }
 #sunset{
     grid-column: 1/-1;
-    grid-row: 13/-1;
+    padding-bottom: 75px;
+    /* grid-row: 13/-1; */
 }
 
 /* IMAGES FROM EXPERIENCE PAGE HERE */
@@ -379,6 +381,7 @@ form{
     nav ul {
         display: flex;
         flex-direction: row;
+        justify-content: space-around;
         
         /* why will nothing in flex row work */
 
